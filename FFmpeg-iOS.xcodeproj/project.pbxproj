@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		B47072481E121B6800EDC815 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B47072471E121B6800EDC815 /* main.m */; };
 		B470724B1E121B6800EDC815 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B470724A1E121B6800EDC815 /* AppDelegate.m */; };
-		B470724E1E121B6800EDC815 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B470724D1E121B6800EDC815 /* ViewController.m */; };
+		B470724E1E121B6800EDC815 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = B470724D1E121B6800EDC815 /* ViewController.mm */; };
 		B47072511E121B6800EDC815 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B470724F1E121B6800EDC815 /* Main.storyboard */; };
 		B47072531E121B6800EDC815 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B47072521E121B6800EDC815 /* Assets.xcassets */; };
 		B47072561E121B6800EDC815 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B47072541E121B6800EDC815 /* LaunchScreen.storyboard */; };
@@ -20,6 +20,8 @@
 		B47072DB1E12365000EDC815 /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B47072D41E12365000EDC815 /* libavutil.a */; };
 		B47072DC1E12365000EDC815 /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B47072D51E12365000EDC815 /* libswresample.a */; };
 		B47072DD1E12365000EDC815 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B47072D61E12365000EDC815 /* libswscale.a */; };
+		B47072E01E12481C00EDC815 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47072DF1E12481C00EDC815 /* CoreMedia.framework */; };
+		B47072E21E12482600EDC815 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47072E11E12482600EDC815 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +30,7 @@
 		B47072491E121B6800EDC815 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B470724A1E121B6800EDC815 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B470724C1E121B6800EDC815 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B470724D1E121B6800EDC815 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B470724D1E121B6800EDC815 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		B47072501E121B6800EDC815 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B47072521E121B6800EDC815 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B47072551E121B6800EDC815 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -145,6 +147,8 @@
 		B47072D41E12365000EDC815 /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavutil.a; sourceTree = "<group>"; };
 		B47072D51E12365000EDC815 /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libswresample.a; sourceTree = "<group>"; };
 		B47072D61E12365000EDC815 /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libswscale.a; sourceTree = "<group>"; };
+		B47072DF1E12481C00EDC815 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		B47072E11E12482600EDC815 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +156,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B47072E21E12482600EDC815 /* AVFoundation.framework in Frameworks */,
+				B47072E01E12481C00EDC815 /* CoreMedia.framework in Frameworks */,
 				B47072DB1E12365000EDC815 /* libavutil.a in Frameworks */,
 				B47072DD1E12365000EDC815 /* libswscale.a in Frameworks */,
 				B47072D91E12365000EDC815 /* libavfilter.a in Frameworks */,
@@ -170,6 +176,7 @@
 			children = (
 				B47072451E121B6800EDC815 /* FFmpeg-iOS */,
 				B47072441E121B6800EDC815 /* Products */,
+				B47072DE1E12481C00EDC815 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -188,7 +195,7 @@
 				B47072491E121B6800EDC815 /* AppDelegate.h */,
 				B470724A1E121B6800EDC815 /* AppDelegate.m */,
 				B470724C1E121B6800EDC815 /* ViewController.h */,
-				B470724D1E121B6800EDC815 /* ViewController.m */,
+				B470724D1E121B6800EDC815 /* ViewController.mm */,
 				B470724F1E121B6800EDC815 /* Main.storyboard */,
 				B47072521E121B6800EDC815 /* Assets.xcassets */,
 				B47072541E121B6800EDC815 /* LaunchScreen.storyboard */,
@@ -397,6 +404,15 @@
 			path = lib;
 			sourceTree = "<group>";
 		};
+		B47072DE1E12481C00EDC815 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B47072E11E12482600EDC815 /* AVFoundation.framework */,
+				B47072DF1E12481C00EDC815 /* CoreMedia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -468,7 +484,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B470724E1E121B6800EDC815 /* ViewController.m in Sources */,
+				B470724E1E121B6800EDC815 /* ViewController.mm in Sources */,
 				B470724B1E121B6800EDC815 /* AppDelegate.m in Sources */,
 				B47072481E121B6800EDC815 /* main.m in Sources */,
 			);
@@ -596,6 +612,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/FFmpeg-iOS/FFmpeg-iOS/lib",
 				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.zxd.item.FFmpeg-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -613,6 +630,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/FFmpeg-iOS/FFmpeg-iOS/lib",
 				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.zxd.item.FFmpeg-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
